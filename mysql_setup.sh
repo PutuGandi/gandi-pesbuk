@@ -15,7 +15,7 @@ if [ $? -ne 0 ]; then
 	Q3="FLUSH PRIVILEGES;"
 	SQL="${Q1}${Q2}${Q3}"
 	sudo $MYSQL -u root -p -e "$SQL"
-	K1="CREATE DATABASE $db_name"
+	K1="CREATE DATABASE '$db_name';"
 	SQL2="${K1}"
 	sudo $MYSQL -u $db_user -p -e "$SQL2"
 	echo "Database '$db_name' dan user '$db_user' sudah dibuat dengan password-nya"

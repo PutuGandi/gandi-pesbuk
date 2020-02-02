@@ -1,6 +1,10 @@
 # gandi-pesbuk
+Running script bellow:
 
-How to Run this script:
-1. copy file automate.sh dan mysql_setup.sh
-2. fill data mysql into mysql_setup.sh
-3. running automate.sh file
+#!/bin/bash
+sudo apt update
+sudo apt install unzip
+sudo apt install vim
+sudo sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
+unzip master.zip
+./gandi-pesbuk-master/automate.sh

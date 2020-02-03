@@ -7,4 +7,6 @@ sudo apt install unzip
 sudo apt install vim
 sudo sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
 unzip master.zip
-./gandi-pesbuk-master/automate.sh user db_bame padd
+# $1=User , $2=Nama Database, $3=Password
+./gandi-pesbuk-master/automate.sh "$1" "$2" "$3" 
+

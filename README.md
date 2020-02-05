@@ -1,3 +1,2 @@
-# gandi-pesbuk
-
-Copy 'run.txt' and run that script
+# Running NGINX,MYSQL,AutoScalling
+Copy 'run.txt' then add crontab to run it's script

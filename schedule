@@ -1,0 +1,2 @@
+#running every reboot
+@reboot /bin/bash ~/gandi-pesbuk-master/automate_aws.sh

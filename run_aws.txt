@@ -1,0 +1,8 @@
+#!/bin/bash 
+sudo apt update 
+sudo apt install unzip 
+sudo apt install vim 
+sudo sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
+unzip master.zip 
+#$1=Localhost , $2=User, $3=Password , $4= Database Name
+./gandi-pesbuk-master/automate.sh $1 $2 $3 $4 

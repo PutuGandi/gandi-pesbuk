@@ -14,7 +14,7 @@ cd s3fs-fuse
 make
 sudo make install
 cd
-echo AKIAVFKGS24IZAYA7B4Q:x/6ih47M6s7W6znz3TWdF49npkltOFZiJlXmHSSv > /home/ubuntu/.passwd-s3fs
+echo AKIAVFKGS24IUTSIIZ6T:kh/aWWK84oGmHszCAo5zmJErq1LK7yqYlApZp4BA > /home/ubuntu/.passwd-s3fs
 sudo chmod 600 /home/ubuntu/.passwd-s3fs
 sudo s3fs SP2-Bucket /var/www/html -o passwd_file=/home/ubuntu/.passwd-s3fs
 sudo cp -r ~/gandi-pesbuk-master/media-sosial/* /var/www/html/

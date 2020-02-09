@@ -1,2 +1,2 @@
 #running every reboot
-@reboot /bin/bash ~/gandi-pesbuk-master/automate_aws.sh
+@reboot /bin/bash ~/gandi-pesbuk-master/automate_aws.sh database-sp2.cbbkbjoitxuc.ap-southeast-1.rds.amazonaws.com admin 99999999 dbsp2

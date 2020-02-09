@@ -4,9 +4,10 @@ sudo apt update
 unzip master.zip
 sudo apt install nginx -y
 sudo apt install php-fpm php-mysql -y
+sudo apt install mysql-client -y
 sudo rm -rf /var/www/html/*
-apt-get install awscli
-sudo apt-get install automake autotools-dev fuse g++ git libcurl4-gnutls-dev libfuse-dev libssl-dev libxml2-dev make pkg-config
+sudo apt-get install awscli -y
+sudo apt-get install automake autotools-dev fuse g++ git libcurl4-gnutls-dev libfuse-dev libssl-dev libxml2-dev make pkg-config -y
 git clone https://github.com/s3fs-fuse/s3fs-fuse.git
 cd s3fs-fuse
 ./autogen.sh
@@ -16,7 +17,7 @@ sudo make install
 cd
 echo AKIAVFKGS24IU2MZN5JO:RRw61VpHNcpgA1u593OAOge8RYqUPr9gQiUzC9qj > /home/ubuntu/.passwd-s3fs
 sudo chmod 600 /home/ubuntu/.passwd-s3fs
-sudo s3fs sp2bucket /var/www/html -o passwd_file=/home/ubuntu/.passwd-s3fs
+sudo s3fs sp2bucket /var/www/html -o passwd_file=/home/ubuntu/.passwd-s3fs -o url=https://s3-ap-southeast-1.amazonaws.com -ouid=1001,gid=1001,allow_other
 sudo cp -r ~/gandi-pesbuk-master/media-sosial/* /var/www/html/
 sudo sed -i s/localhost/$1/g /var/www/html/config.php
 sudo sed -i s/devopscilsy/$2/g /var/www/html/config.php

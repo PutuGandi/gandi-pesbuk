@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install unzip
 sudo apt install vim
-sudo sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
+sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
 unzip master.zip
 sudo apt install nginx -y
 sudo apt install mysql-server -y
@@ -11,8 +11,8 @@ MYSQL=`which mysql`
 mysql_user="root"
 mysql_pass="password"
 db_user="$1"
-db_pass="$3"
-db_name="$2"
+db_pass="$2"
+db_name="$3"
 Q1="CREATE DATABASE IF NOT EXISTS $db_name;"
 Q2="GRANT ALL ON *.* TO '$db_user'@'localhost' IDENTIFIED BY '$db_pass';"
 Q3="FLUSH PRIVILEGES;"
@@ -32,5 +32,3 @@ sudo nginx -t
 sudo systemctl reload nginx
 cd /var/www/html/
 sudo mysql -u$db_user -p$db_pass $db_name < dump.sql
-#crontab schedule
-

@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install unzip
 sudo apt install vim
-sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
+#sudo wget https://github.com/PutuGandi/gandi-pesbuk/archive/master.zip
 unzip master.zip
 sudo apt install nginx -y
 sudo apt install mysql-server -y
